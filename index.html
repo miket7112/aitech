@@ -1,114 +1,119 @@
-/* Reset some default browser styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami Loves Green</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+        
+        header {
+            background-color: #2c5530;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
 
-/* Body and overall styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            margin: 0;
+        }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
 
-header .logo h1 {
-    font-size: 24px;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-}
+        .card {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
 
-nav ul li {
-    margin-left: 20px;
-}
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
-}
+        .card-content {
+            padding: 1.5rem;
+        }
 
-/* Main content and tutorial sections */
-main {
-    display: flex;
-    justify-content: space-between;
-    margin: 20px;
-}
+        .card h2 {
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            color: #2c5530;
+        }
 
-main section {
-    width: 65%;
-}
+        .button {
+            display: inline-block;
+            padding: 0.8rem 1.5rem;
+            background-color: #2c5530;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
 
-aside {
-    width: 30%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+        .button:hover {
+            background-color: #1a331d;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Miami Loves Green</h1>
+        <p>Discover sustainable living in the heart of Miami</p>
+    </header>
 
-section h2 {
-    margin-bottom: 10px;
-    color: #333;
-}
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1466692476868-aef1dfb1e735" alt="Urban Garden">
+                <div class="card-content">
+                    <h2>Urban Gardens</h2>
+                    <p>Explore Miami's flourishing community gardens and learn how to start your own.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
 
-.tutorials {
-    display: flex;
-    flex-direction: column;
-}
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1530836369250-ef72a3f5cda8" alt="Sustainable Living">
+                <div class="card-content">
+                    <h2>Eco-Friendly Living</h2>
+                    <p>Discover tips and tricks for sustainable living in Miami's urban environment.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
 
-.tutorial {
-    background-color: white;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1523741543316-beb7fc7023d8" alt="Green Events">
+                <div class="card-content">
+                    <h2>Green Events</h2>
+                    <p>Join our community events focused on environmental awareness and sustainability.</p>
+                    <a href="#" class="button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
 
-.tutorial h3 {
-    color: #333;
-}
 
-.tutorial p {
-    color: #555;
-}
-
-.btn {
-    display: inline-block;
-    background-color: #3498db;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-.btn:hover {
-    background-color: #2980b9;
-}
-
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 20px;
-}
-
-footer .social-links a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
